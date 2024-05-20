@@ -55,7 +55,7 @@ def handle_vk_group(message):
     rpi = """
         Рпи это предмет про который говорят тяжело в учении, легко в бою.
         """
-    bot.send_message(message.chat.id, locations)
+    bot.send_message(message.chat.id)
 
 # Функция для определения четности недели
 def is_even_week():
