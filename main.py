@@ -42,7 +42,7 @@ def handle_help(message):
 
 # Обработчик для команды
 @bot.message_handler(commands=['programmer'])
-def handle_location(message):
+def handle_programmer(message):
     programmer = """
     Программист это человек который превращает кофеин в код.
     """
@@ -51,11 +51,11 @@ def handle_location(message):
 
 # Обработчик для команды /vk
 @bot.message_handler(commands=['rpi'])
-def handle_vk_group(message):
+def handle_rpi(message):
     rpi = """
         Рпи это предмет про который говорят тяжело в учении, легко в бою.
         """
-    bot.send_message(message.chat.id)
+    bot.send_message(message.chat.id, locations)
 
 # Функция для определения четности недели
 def is_even_week():
